@@ -1,0 +1,17 @@
+RA decimal 521 829 is hexadecimal 00 07 F6 65. 
+Hubble would read decimal 521 829 as hexadecimal 00 07 F6 65 (big endian).
+Intel would read decimal 521 829 as hexadecimal 65 F6 07 00 (little endian). 
+
+We¡¯re using Intel to access the images. 
+Since at the end, we want to read hexadecimal 00 07 F6 65. 
+We should change the integer to be 65 F6 07 00 instead of 00  07 F6 65 that was inputted into Intel, so that when we read it with intel, we actually read 00 07 F6 65.
+
+The same idea would apply for Declination as well. 
+
+D decimal  -2256461 is hexadecimal FF DD 91 B3
+Hubble would read decimal -2256461 as hexadecimal FF DD 91 B3 (big endian).
+Intel would read decimal  -2256461 as hexadecimal B3 91 DD FF (little endian). 
+
+Therefore, correct values of the two integers that you should use in your program to search for Proxima Centauri are:
+65 F6 07 00 for RA
+B3 91 DD FF for D

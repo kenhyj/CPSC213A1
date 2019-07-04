@@ -1,0 +1,2 @@
+Any 4-byte hexadecimal integer that is a palindrome (what spelled forwards equals backwards like "racecar" ). 
+eg. 0x 6D 0D 0D 6D 
